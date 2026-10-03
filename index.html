@@ -427,6 +427,32 @@ font-size:clamp(50px,6vw,85px);
   bottom:35px;
   z-index:2;
 }
+
+.sql-label{
+  display:inline-block;
+  background:#F7C9D7;
+  color:#C92F68;
+  padding:7px 12px;
+  border-radius:7px;
+  font-family:monospace;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+.dark .sql-label{
+  background:#F7C9D7;
+  color:#C92F68;
+}
+.construction{
+  display:inline-block;
+  background:var(--yellow);
+  color:var(--brown);
+  padding:8px 13px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:16px;
+}
 </style>
 </head>
 
@@ -442,7 +468,6 @@ font-size:clamp(50px,6vw,85px);
         <a href="#sobre">Sobre</a>
         <a href="#competencias">Competências</a>
         <a href="#projetos">Projetos</a>
-        <a href="#dashboards">Dashboards</a>
         <a href="#cases">Cases</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -523,6 +548,7 @@ font-size:clamp(50px,6vw,85px);
       <div>PORTFÓLIO · 2026</div>
     </div>
 
+    <div class="sql-label">SELECT * FROM trajetória WHERE foco = "dados";</div>
     <h2 class="section-title">Sobre mim</h2>
 
    <div class="about-grid">
@@ -589,6 +615,7 @@ font-size:clamp(50px,6vw,85px);
       <div>PORTFÓLIO · 2026</div>
     </div>
 
+    <div class="sql-label">SELECT * FROM competências ORDER BY destaque DESC;</div>
     <h2 class="section-title">Minhas competências</h2>
     <p class="section-intro">
       Uma visão rápida das áreas que fazem parte da minha trajetória profissional
@@ -666,6 +693,7 @@ font-size:clamp(50px,6vw,85px);
       <div>PORTFÓLIO · 2026</div>
     </div>
 
+    <div class="sql-label">SELECT * FROM projetos ORDER BY relevância DESC;</div>
     <h2 class="section-title">Meus projetos</h2>
     <p class="section-intro">
       Projetos em que construo soluções: aplicações web, banco de dados,
@@ -673,25 +701,6 @@ font-size:clamp(50px,6vw,85px);
     </p>
 
     <div class="cards">
-      <article class="project-card">
-        <div class="project-image"> CAFÉ AURORA</div>
-        <div class="project-body">
-          <h3>Projeto Café Aurora</h3>
-          <p>
-            Solução de Analytics para uma cafeteria, com foco em dados de vendas,
-            comportamento de clientes e acompanhamento de indicadores.
-          </p>
-          <div class="tags">
-            <span class="tag">SQL</span>
-            <span class="tag">Web</span>
-            <span class="tag">Power BI</span>
-          </div>
-          <div class="buttons">
-            <a class="btn fill" href="#cafe">VER PROJETO</a>
-            <a class="btn" href="#cafe">CÓDIGO</a>
-          </div>
-        </div>
-      </article>
 
       <article class="project-card">
         <div class="project-image">DATA CLEANER</div>
@@ -764,6 +773,7 @@ font-size:clamp(50px,6vw,85px);
       <div>PORTFÓLIO · 2026</div>
     </div>
 
+    <div class="sql-label">SELECT * FROM dashboards WHERE status = "em construção";</div>
     <h2 class="section-title">Dashboards</h2>
     <p class="section-intro">
       Área dedicada a visualizações e análises em Power BI, com foco em indicadores,
@@ -776,9 +786,9 @@ font-size:clamp(50px,6vw,85px);
           <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
           <div class="fake-chart"></div>
         </div>
-        <h3>Dashboard de Vendas</h3>
-        <p>Faturamento, pedidos, ticket médio, produtos e evolução das vendas.</p>
-        <a class="btn fill" href="#dashboard-vendas">VIEW DASHBOARD</a>
+        <span class="construction">EM CONSTRUÇÃO</span>
+        <h3>Dashboards autorais</h3>
+        <p>Estou desenvolvendo dashboards com dados públicos e projetos autorais para demonstrar análises, indicadores e visualizações em Power BI.</p>
       </article>
 
       <article class="dashboard">
@@ -786,19 +796,19 @@ font-size:clamp(50px,6vw,85px);
           <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
           <div class="fake-chart"></div>
         </div>
-        <h3>Dashboard Financeiro</h3>
-        <p>Receitas, despesas, margem e evolução financeira.</p>
-        <a class="btn fill" href="#dashboard-financeiro">VIEW DASHBOARD</a>
-      </article>
-
-      <article class="dashboard">
-        <div class="dashboard-preview">
-          <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
-          <div class="fake-chart"></div>
-        </div>
+        <span class="construction">EM CONSTRUÇÃO</span>
         <h3>Marketing Analytics</h3>
-        <p>Aquisição, conversão, CAC, receita e retenção.</p>
-        <a class="btn fill" href="#dashboard-marketing">VIEW DASHBOARD</a>
+        <p>Projeto em desenvolvimento com foco em aquisição, conversão, CAC, receita e retenção.</p>
+      </article>
+
+      <article class="dashboard">
+        <div class="dashboard-preview">
+          <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
+          <div class="fake-chart"></div>
+        </div>
+        <span class="construction">EM CONSTRUÇÃO</span>
+        <h3>Novos dashboards</h3>
+        <p>Novos projetos serão adicionados conforme forem finalizados e publicados.</p>
       </article>
     </div>
   </div>
@@ -813,6 +823,7 @@ font-size:clamp(50px,6vw,85px);
       <div>PORTFÓLIO · 2026</div>
     </div>
 
+    <div class="sql-label">SELECT * FROM cases ORDER BY impacto DESC;</div>
     <h2 class="section-title">Cases & Analytics</h2>
     <p class="section-intro">
       Projetos que conectam análise de dados, problemas de negócio,
@@ -864,6 +875,7 @@ font-size:clamp(50px,6vw,85px);
 <!-- CONTATO -->
 <section class="contact" id="contato">
   <div class="page-inner">
+    <div class="sql-label">SELECT * FROM contato WHERE interesse = "conexões";</div>
     <h2>Entre em contato.</h2>
     <p>
       Aberta a conexões, projetos e oportunidades para transformar dados em soluções que geram valor para o negócio.
