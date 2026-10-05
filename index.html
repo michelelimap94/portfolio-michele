@@ -37,11 +37,7 @@ h1,h2,h3,.brand,.big-title{
   letter-spacing:-1.5px;
 }
 a{color:inherit}
-.page{
-  
-  position:relative;
-  overflow:hidden;
-}
+.page{position:relative;overflow:hidden}
 .page-inner{
   width:min(1180px, calc(100% - 90px));
   margin:auto;
@@ -59,15 +55,8 @@ a{color:inherit}
 }
 .brand{font-size:21px}
 .home-topbar{margin-top:120px}
-.nav{
-  display:flex;
-  gap:24px;
-  flex-wrap:wrap;
-}
-.nav a{
-  text-decoration:none;
-  font-weight:600;
-}
+.nav{display:flex;gap:24px;flex-wrap:wrap}
+.nav a{text-decoration:none;font-weight:600}
 .nav a:hover{text-decoration:underline}
 .date{font-weight:700}
 
@@ -85,10 +74,7 @@ a{color:inherit}
   -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 35%,transparent 100%);
   mask-image:linear-gradient(to bottom,#000 0%,#000 35%,transparent 100%);
 }
-.hero{
-  background:var(--cream);
-  min-height:720px;
-}
+.hero{background:var(--cream);min-height:720px}
 .hero-content{
   padding:75px 0 95px;
   display:grid;
@@ -96,43 +82,44 @@ a{color:inherit}
   gap:55px;
   align-items:center;
 }
-.eyebrow{
-  font-weight:700;
-  font-size:14px;
-  margin-bottom:18px;
-}
+.eyebrow{font-weight:700;font-size:14px;margin-bottom:18px}
 .hero h1{
-font-size:clamp(50px,6vw,85px);
+  font-size:clamp(50px,6vw,85px);
   line-height:.92;
   margin:0 0 25px;
   max-width:900px;
 }
 .hero h1 span{color:var(--brown2)}
-.hero-role{
-  font-size:28px;
-  font-weight:700;
-  margin-bottom:20px;
-}
-.hero-copy{
-  font-size:18px;
-  line-height:1.55;
-  max-width:650px;
-}
+.hero-role{font-size:28px;font-weight:700;margin-bottom:20px}
+.hero-copy{font-size:18px;line-height:1.55;max-width:650px}
+.hero-buttons{display:flex;gap:10px;flex-wrap:nowrap;margin-top:22px}
+.hero-buttons .btn{white-space:nowrap;padding:11px 14px;font-size:12px}
 
-.hero-buttons{
-  display:flex;
-  gap:10px;
-  flex-wrap:nowrap;
-  margin-top:22px;
+.hero-visual{
+  position:relative;
+  width:430px;
+  min-height:540px;
+  justify-self:center;
 }
-
-.hero-buttons .btn{
-  white-space:nowrap;
-  padding:11px 14px;
-  font-size:12px;
+.photo-card{
+  position:absolute;
+  top:0;
+  left:20px;
+  width:310px;
+  height:390px;
+  background:var(--pink);
+  padding:14px;
+  transform:rotate(-3deg);
+  box-shadow:10px 10px 0 rgba(58,41,30,.15);
+  z-index:1;
 }
-
+.photo-card img{width:100%;height:100%;object-fit:cover;display:block}
 .sticker{
+  position:absolute;
+  width:330px;
+  right:-10px;
+  bottom:35px;
+  z-index:2;
   background:var(--sage);
   padding:27px;
   transform:rotate(6deg);
@@ -153,15 +140,10 @@ font-size:clamp(50px,6vw,85px);
 }
 
 /* sections */
-.dark{
-  background:var(--brown);
-  color:var(--white);
-}
+.dark{background:var(--brown);color:var(--white)}
 .dark .topbar{color:var(--pink)}
 .dark .section-title{color:var(--pink)}
-.section{
-  padding-bottom:95px;
-}
+.section{padding-bottom:95px}
 .section-title{
   font-size:clamp(55px,7vw,80px);
   line-height:.9;
@@ -169,17 +151,8 @@ font-size:clamp(50px,6vw,85px);
   color:var(--brown);
 }
 .dark .section-title{color:var(--pink)}
-.section-intro{
-  max-width:780px;
-  font-size:18px;
-  line-height:1.6;
-  margin:-25px 0 45px;
-}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:28px;
-}
+.section-intro{max-width:780px;font-size:18px;line-height:1.6;margin:-25px 0 45px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .card{
   background:var(--cream2);
   color:var(--ink);
@@ -188,19 +161,9 @@ font-size:clamp(50px,6vw,85px);
   min-height:250px;
   box-shadow:7px 8px 0 rgba(231,208,216,.75);
 }
-.card h3{
-  font-size:25px;
-  margin:0 0 15px;
-}
-.card p{
-  line-height:1.55;
-  margin:0 0 20px;
-}
-.tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-}
+.card h3{font-size:25px;margin:0 0 15px}
+.card p{line-height:1.55;margin:0 0 20px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
 .tag{
   background:var(--pink);
   padding:7px 10px;
@@ -223,30 +186,8 @@ font-size:clamp(50px,6vw,85px);
   padding:24px;
   min-height:220px;
 }
-
-.skill h3{
-  font-size:22px;
-  margin:0 0 10px;
-}
-
-.skill-level{
-  display:inline-block;
-  background:var(--pink2);
-  color:var(--brown);
-  padding:7px 12px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:700;
-  margin-bottom:18px;
-}
-
-.skill-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:4px;
-}
-
+.skill h3{font-size:22px;margin:0 0 20px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
 .skill-tags span{
   display:inline-block;
   background:var(--cream);
@@ -259,7 +200,6 @@ font-size:clamp(50px,6vw,85px);
 .skill:nth-child(2){background:var(--sage)}
 .skill:nth-child(3){background:var(--yellow)}
 .skill:nth-child(4){background:var(--cream2)}
-.skill h3{font-size:22px;margin:0 0 20px}
 .skill p{line-height:1.55}
 
 .project-card{
@@ -295,37 +235,6 @@ font-size:clamp(50px,6vw,85px);
 .btn:hover{transform:translateY(-2px)}
 .btn.fill{background:var(--brown);color:var(--cream2)}
 
-.dashboard-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-.dashboard{
-  background:var(--cream2);
-  color:var(--brown);
-  padding:18px;
-  box-shadow:7px 8px 0 var(--pink2);
-}
-.dashboard-preview{
-  height:190px;
-  background:#EDE8DD;
-  border:2px solid var(--brown);
-  position:relative;
-  overflow:hidden;
-  padding:18px;
-}
-.fake-kpis{display:flex;gap:8px}
-.fake-kpi{height:45px;flex:1;background:var(--pink)}
-.fake-chart{
-  position:absolute;
-  left:18px;right:18px;bottom:18px;height:95px;
-  background:
-    linear-gradient(150deg,transparent 0 35%,var(--brown) 36% 38%,transparent 39% 53%,var(--pink2) 54% 57%,transparent 58%);
-  border-bottom:2px solid var(--brown);
-}
-.dashboard h3{font-size:21px;margin:20px 0 8px}
-.dashboard p{line-height:1.45;font-size:14px}
-
 .case{
   background:var(--sage);
   color:var(--brown);
@@ -335,18 +244,10 @@ font-size:clamp(50px,6vw,85px);
 }
 .case h3{font-size:30px;margin:0 0 15px}
 .case p{line-height:1.6;max-width:850px}
-.case-flow{
-  display:flex;gap:10px;flex-wrap:wrap;margin-top:25px
-}
-.flow{
-  background:var(--brown);color:white;padding:10px 13px;font-weight:700;font-size:12px
-}
+.case-flow{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.flow{background:var(--brown);color:white;padding:10px 13px;font-weight:700;font-size:12px}
 
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:35px;
-}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
 .about-copy{font-size:18px;line-height:1.7}
 .highlight{
   background:var(--sage);
@@ -360,280 +261,12 @@ font-size:clamp(50px,6vw,85px);
 }
 .highlight h3{font-size:25px;margin-top:0}
 
-.contact{
-  background:var(--pink);
-  color:var(--brown);
-  padding:75px 0 100px;
-}
+.contact{background:var(--pink);color:var(--brown);padding:75px 0 100px}
 .contact h2{font-size:clamp(50px,7vw,95px);margin:0 0 20px;line-height:.9}
 .contact p{font-size:18px;max-width:650px;line-height:1.6}
 
-.footer{
-  background:var(--brown);
-  color:var(--pink);
-  padding:25px 0;
-}
-.footer-inner{
-  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
-  font-size:13px;font-weight:700;
-}
-
-@media(max-width:900px){
-  .page-inner{width:min(100% - 38px,720px)}
-  .about-grid{grid-template-columns:1fr}
-  .skills{grid-template-columns:repeat(2,1fr)}
-  .cards,.dashboard-grid{grid-template-columns:1fr}
-  .nav{display:none}
-
-  /* Tablet / mobile: hero becomes a single column */
-  .hero-content{
-    grid-template-columns:1fr;
-    gap:35px;
-    padding:55px 0 75px;
-  }
-  .hero-copy{max-width:100%}
-  .hero-visual{
-    width:min(430px,100%);
-    min-height:540px;
-    margin:0 auto;
-  }
-  .hero-visual .sticker{
-    right:0;
-  }
-  .hero h1{font-size:62px}
-}
-
-@media(max-width:560px){
-  .page-inner{width:calc(100% - 32px)}
-
-  .topbar{
-    padding:22px 0 16px;
-    gap:10px;
-    font-size:11px;
-  }
-  .brand{font-size:17px}
-  .topbar > div:nth-child(2){text-align:center}
-  .date{font-size:10px;white-space:nowrap}
-
-  .hero{
-    min-height:0;
-  }
-  .home-topbar{
-    margin-top:82px;
-  }
-  .hero-content{
-    grid-template-columns:1fr;
-    padding:45px 0 65px;
-    gap:35px;
-    min-width:0;
-  }
-  .hero h1{
-    font-size:clamp(43px,13vw,54px);
-    line-height:.94;
-    max-width:100%;
-    overflow-wrap:break-word;
-    margin-bottom:22px;
-  }
-  .hero-role{
-    font-size:23px;
-    line-height:1.15;
-  }
-  .hero-copy{
-    font-size:16px;
-    line-height:1.5;
-    max-width:100%;
-  }
-
-  .hero-buttons{
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  .hero-buttons .btn{
-    white-space:normal;
-    padding:11px 13px;
-    font-size:11px;
-  }
-
-  .hero-visual{
-    width:100%;
-    min-height:510px;
-  }
-  .photo-card{
-    width:min(270px,78vw);
-    height:min(345px,100vw);
-    left:2px;
-  }
-  .hero-visual .sticker{
-    width:min(285px,82vw);
-    right:0;
-    bottom:20px;
-    padding:22px;
-  }
-  .sticker strong{font-size:15px}
-  .sticker ul{font-size:13px}
-
-  .sql-label{
-    max-width:100%;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    font-size:11px;
-    padding:7px 10px;
-  }
-
-  .section{
-    padding-bottom:65px;
-  }
-  .section-title{
-    font-size:clamp(43px,13vw,58px);
-    line-height:.92;
-    margin:28px 0 35px;
-  }
-  .section-intro{
-    font-size:16px;
-    line-height:1.5;
-    margin:-15px 0 32px;
-  }
-
-  .skills{
-    grid-template-columns:1fr;
-    gap:14px;
-  }
-  .skill{
-    min-height:0;
-    padding:20px;
-  }
-  .skill h3{
-    font-size:21px;
-    margin-bottom:14px;
-  }
-  .skill-level{
-    margin-bottom:15px;
-  }
-  .skill-tags{
-    gap:8px;
-  }
-  .skill-tags span{
-    padding:7px 10px;
-    font-size:11px;
-  }
-
-  .cards{
-    grid-template-columns:1fr;
-    gap:24px;
-  }
-  .project-card{
-    width:100%;
-    min-width:0;
-  }
-  .project-image{
-    min-height:150px;
-    height:auto;
-    padding:32px 22px;
-    justify-content:flex-start;
-    align-items:center;
-    font-size:clamp(30px,9vw,42px);
-    line-height:.95;
-    overflow-wrap:anywhere;
-  }
-  .project-body{
-    padding:22px;
-  }
-  .project-body h3{
-    font-size:23px;
-    line-height:1.05;
-    margin-bottom:12px;
-  }
-  .project-body p{
-    font-size:15px;
-    line-height:1.5;
-    margin-bottom:18px;
-  }
-  .project-body .tags{
-    gap:7px;
-  }
-  .project-body .tag{
-    font-size:11px;
-    padding:6px 9px;
-  }
-  .buttons{
-    gap:8px;
-  }
-
-  .dashboard-grid{
-    grid-template-columns:1fr;
-    gap:20px;
-  }
-  .dashboard{
-    padding:14px;
-  }
-  .dashboard-preview{
-    height:175px;
-  }
-
-  .case{
-    padding:24px;
-  }
-  .case h3{
-    font-size:24px;
-    line-height:1.05;
-  }
-  .case p{
-    font-size:15px;
-    line-height:1.5;
-  }
-
-  .contact{
-    padding:55px 0 70px;
-  }
-  .contact h2{
-    font-size:clamp(45px,13vw,65px);
-  }
-  .contact p{
-    font-size:16px;
-  }
-
-  .footer-inner{
-    flex-direction:column;
-    gap:10px;
-    font-size:11px;
-  }
-}
-
-.hero-visual{
-  position:relative;
-  width:430px;
-  min-height:540px;
-  justify-self:center;
-}
-
-.photo-card{
-  position:absolute;
-  top:0;
-  left:20px;
-  width:310px;
-  height:390px;
-  background:var(--pink);
-  padding:14px;
-  transform:rotate(-3deg);
-  box-shadow:10px 10px 0 rgba(58,41,30,.15);
-  z-index:1;
-}
-
-.photo-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.hero-visual .sticker{
-  position:absolute;
-  width:330px;
-  right:-10px;
-  bottom:35px;
-  z-index:2;
-}
+.footer{background:var(--brown);color:var(--pink);padding:25px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;font-weight:700}
 
 .sql-label{
   display:inline-block;
@@ -646,19 +279,65 @@ font-size:clamp(50px,6vw,85px);
   font-weight:700;
   margin-bottom:14px;
 }
-.dark .sql-label{
-  background:#F7C9D7;
-  color:#C92F68;
+.dark .sql-label{background:#F7C9D7;color:#C92F68}
+
+@media(max-width:900px){
+  .page-inner{width:min(100% - 38px,720px)}
+  .about-grid{grid-template-columns:1fr}
+  .skills{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:1fr}
+  .nav{display:none}
+  .hero-content{grid-template-columns:1fr;gap:35px;padding:55px 0 75px}
+  .hero-copy{max-width:100%}
+  .hero-visual{width:min(430px,100%);min-height:540px;margin:0 auto}
+  .hero-visual .sticker{right:0}
+  .hero h1{font-size:62px}
 }
-.construction{
-  display:inline-block;
-  background:var(--yellow);
-  color:var(--brown);
-  padding:8px 13px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:700;
-  margin-bottom:16px;
+
+@media(max-width:560px){
+  .page-inner{width:calc(100% - 32px)}
+  .topbar{padding:22px 0 16px;gap:10px;font-size:11px}
+  .brand{font-size:17px}
+  .topbar > div:nth-child(2){text-align:center}
+  .date{font-size:10px;white-space:nowrap}
+  .hero{min-height:0}
+  .home-topbar{margin-top:82px}
+  .hero-content{grid-template-columns:1fr;padding:45px 0 65px;gap:35px;min-width:0}
+  .hero h1{font-size:clamp(43px,13vw,54px);line-height:.94;max-width:100%;overflow-wrap:break-word;margin-bottom:22px}
+  .hero-role{font-size:23px;line-height:1.15}
+  .hero-copy{font-size:16px;line-height:1.5;max-width:100%}
+  .hero-buttons{flex-wrap:wrap;gap:10px}
+  .hero-buttons .btn{white-space:normal;padding:11px 13px;font-size:11px}
+  .hero-visual{width:100%;min-height:510px}
+  .photo-card{width:min(270px,78vw);height:min(345px,100vw);left:2px}
+  .hero-visual .sticker{width:min(285px,82vw);right:0;bottom:20px;padding:22px}
+  .sticker strong{font-size:15px}
+  .sticker ul{font-size:13px}
+  .sql-label{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px;padding:7px 10px}
+  .section{padding-bottom:65px}
+  .section-title{font-size:clamp(43px,13vw,58px);line-height:.92;margin:28px 0 35px}
+  .section-intro{font-size:16px;line-height:1.5;margin:-15px 0 32px}
+  .skills{grid-template-columns:1fr;gap:14px}
+  .skill{min-height:0;padding:20px}
+  .skill h3{font-size:21px;margin-bottom:14px}
+  .skill-tags{gap:8px}
+  .skill-tags span{padding:7px 10px;font-size:11px}
+  .cards{grid-template-columns:1fr;gap:24px}
+  .project-card{width:100%;min-width:0}
+  .project-image{min-height:150px;height:auto;padding:32px 22px;justify-content:flex-start;align-items:center;font-size:clamp(30px,9vw,42px);line-height:.95;overflow-wrap:anywhere}
+  .project-body{padding:22px}
+  .project-body h3{font-size:23px;line-height:1.05;margin-bottom:12px}
+  .project-body p{font-size:15px;line-height:1.5;margin-bottom:18px}
+  .project-body .tags{gap:7px}
+  .project-body .tag{font-size:11px;padding:6px 9px}
+  .buttons{gap:8px}
+  .case{padding:24px}
+  .case h3{font-size:24px;line-height:1.05}
+  .case p{font-size:15px;line-height:1.5}
+  .contact{padding:55px 0 70px}
+  .contact h2{font-size:clamp(45px,13vw,65px)}
+  .contact p{font-size:16px}
+  .footer-inner{flex-direction:column;gap:10px;font-size:11px}
 }
 </style>
 </head>
@@ -681,68 +360,36 @@ font-size:clamp(50px,6vw,85px);
       <div class="date">PORTFÓLIO · 2026</div>
     </div>
 
-   <div class="hero-content">
+    <div class="hero-content">
+      <div>
+        <div class="eyebrow">DADOS · TECNOLOGIA · MARKETING</div>
+        <h1>Olá, eu sou <span>Michele Lima.</span></h1>
+        <div class="hero-role">Analista de Dados | Marketing Analytics</div>
+        <p class="hero-copy">Transformo dados em insights e soluções que apoiam decisões de negócio, unindo tecnologia, BI e marketing para transformar informações em oportunidades, estratégias e resultados.</p>
+        <div class="hero-buttons">
+          <a class="btn fill" href="#projetos">VER PROJETOS</a>
+          <a class="btn" href="#sobre">SOBRE MIM</a>
+          <a class="btn" href="curriculos/curriculo_dados.pdf" target="_blank">CV · DADOS</a>
+          <a class="btn" href="curriculos/curriculo_marketing.pdf" target="_blank">CV · MARKETING</a>
+        </div>
+      </div>
 
-  <div>
-    <div class="eyebrow">DADOS · TECNOLOGIA · MARKETING</div>
-
-    <h1>Olá, eu sou <span>Michele Lima.</span></h1>
-
-    <div class="hero-role">
-      Analista de Dados | Marketing Analytics
+      <div class="hero-visual">
+        <div class="photo-card">
+          <img src="./michele.JPG" alt="Foto de Michele Lima">
+        </div>
+        <div class="sticker">
+          <div class="pin"></div>
+          <strong>DESTAQUES:</strong>
+          <ul>
+            <li>Inteligência de Dados, BI e Planejamento</li>
+            <li>SQL, Excel, Power BI e Power Query</li>
+            <li>Desenvolvimento web e automação</li>
+            <li>Marketing, comunicação e análise</li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <p class="hero-copy">
-      Transformo dados em insights e soluções que apoiam decisões de negócio, unindo tecnologia, BI e marketing para transformar informações em oportunidades, estratégias e resultados.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a class="btn fill" href="#projetos">
-        VER PROJETOS
-      </a>
-
-      <a class="btn" href="#sobre">
-        SOBRE MIM
-      </a>
-
-      <a class="btn" href="curriculos/curriculo_dados.pdf" target="_blank">
-        CV · DADOS
-      </a>
-
-      <a class="btn" href="curriculos/curriculo_marketing.pdf" target="_blank">
-        CV · MARKETING
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <div class="hero-visual">
-
-    <div class="photo-card">
-      <img src="./michele.JPG" alt="Foto de Michele Lima">
-    </div>
-
-    <div class="sticker">
-
-      <div class="pin"></div>
-
-      <strong>DESTAQUES:</strong>
-
-      <ul>
-        <li>Inteligência de Dados, BI e Planejamento</li>
-        <li>SQL, Excel, Power BI e Power Query</li>
-        <li>Desenvolvimento web e automação</li>
-        <li>Marketing, comunicação e análise</li>
-      </ul>
-
-    </div>
-
-  </div>
-
-</div>
   </div>
 </section>
 
@@ -754,62 +401,25 @@ font-size:clamp(50px,6vw,85px);
       <div>01 / SOBRE</div>
       <div>PORTFÓLIO · 2026</div>
     </div>
-
     <div class="sql-label">SELECT * FROM trajetória WHERE foco = "dados";</div>
     <h2 class="section-title">Sobre mim</h2>
-
-   <div class="about-grid">
-
-  <div class="about-copy">
-
-    <p>
-      Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>,
-      em fase de conclusão, e retomei minha formação em
-      <strong>Publicidade e Propaganda</strong>, curso que já havia iniciado
-      anteriormente. Essa trajetória vem construindo um perfil que conecta
-      <strong>dados, tecnologia, negócios e comunicação</strong>.
-    </p>
-
-    <p>
-      Atualmente atuo com <strong>Inteligência de Dados, BI e Planejamento</strong>,
-      trabalhando com tratamento e análise de dados, indicadores, relatórios,
-      dashboards e soluções digitais.
-    </p>
-
-    <p>
-      Também tenho experiência profissional com <strong>Social Media e Design</strong>,
-      experiência que fortaleceu meu olhar para comunicação, criatividade,
-      conteúdo e experiência digital. Hoje, busco integrar esses diferentes
-      conhecimentos para transformar dados e informações em
-      <strong>insights, soluções e oportunidades de negócio</strong>.
-    </p>
-
-  </div>
-
-
-  <div class="highlight">
-
-    <h3>Meu foco:</h3>
-
-    <p>
-      Gosto de entender o problema, olhar para os dados, identificar
-      oportunidades e transformar esses insights em soluções práticas,
-      seja por meio de dashboards, automações, análises ou projetos digitais.
-      Meu objetivo é conectar o lado analítico com criatividade e visão de
-      negócio, criando soluções que não apenas organizem informações,
-      mas ajudem a tomar decisões melhores e gerar resultados.
-    </p>
-
-    <div class="tags">
-      <span class="tag">Dados</span>
-      <span class="tag">BI</span>
-      <span class="tag">Tecnologia</span>
-      <span class="tag">Marketing</span>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, em fase de conclusão, e retomei minha formação em <strong>Publicidade e Propaganda</strong>, curso que já havia iniciado anteriormente. Essa trajetória vem construindo um perfil que conecta <strong>dados, tecnologia, negócios e comunicação</strong>.</p>
+        <p>Atualmente atuo com <strong>Inteligência de Dados, BI e Planejamento</strong>, trabalhando com tratamento e análise de dados, indicadores, relatórios, dashboards e soluções digitais.</p>
+        <p>Também tenho experiência profissional com <strong>Social Media e Design</strong>, experiência que fortaleceu meu olhar para comunicação, criatividade, conteúdo e experiência digital. Hoje, busco integrar esses diferentes conhecimentos para transformar dados e informações em <strong>insights, soluções e oportunidades de negócio</strong>.</p>
+      </div>
+      <div class="highlight">
+        <h3>Meu foco:</h3>
+        <p>Gosto de entender o problema, olhar para os dados, identificar oportunidades e transformar esses insights em soluções práticas, seja por meio de dashboards, automações, análises ou projetos digitais. Meu objetivo é conectar o lado analítico com criatividade e visão de negócio, criando soluções que não apenas organizem informações, mas ajudem a tomar decisões melhores e gerar resultados.</p>
+        <div class="tags">
+          <span class="tag">Dados</span>
+          <span class="tag">BI</span>
+          <span class="tag">Tecnologia</span>
+          <span class="tag">Marketing</span>
+        </div>
+      </div>
     </div>
-
-  </div>
-
-</div>
   </div>
 </section>
 
@@ -821,74 +431,61 @@ font-size:clamp(50px,6vw,85px);
       <div>02 / COMPETÊNCIAS</div>
       <div>PORTFÓLIO · 2026</div>
     </div>
-
     <div class="sql-label">SELECT * FROM competências ORDER BY destaque DESC;</div>
     <h2 class="section-title">Minhas competências</h2>
-    <p class="section-intro">
-      Uma visão rápida das áreas que fazem parte da minha trajetória profissional
-      e dos projetos que desenvolvo.
-    </p>
+    <p class="section-intro">Uma visão rápida das áreas que fazem parte da minha trajetória profissional e dos projetos que desenvolvo.</p>
 
     <div class="skills">
+      <div class="skill">
+        <h3>Dados &amp; BI</h3>
+        <div class="skill-tags">
+          <span>SQL</span>
+          <span>Excel</span>
+          <span>Power BI</span>
+          <span>Power Query</span>
+          <span>KPIs</span>
+          <span>Análise de dados</span>
+          <span>Tratamento de dados</span>
+        </div>
+      </div>
 
-  <div class="skill">
-    <h3>Dados &amp; BI</h3>
-    <span class="skill-level">Intermediário / avançado</span>
+      <div class="skill">
+        <h3>Tecnologia</h3>
+        <div class="skill-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>Git/GitHub</span>
+          <span>Desenvolvimento web</span>
+          <span>Automação</span>
+        </div>
+      </div>
 
-    <div class="skill-tags">
-      <span>SQL</span>
-      <span>Excel</span>
-      <span>Power BI</span>
-      <span>Power Query</span>
-      <span>KPIs</span>
-      <span>Análise de dados</span>
-      <span>Tratamento de dados</span>
+      <div class="skill">
+        <h3>Marketing</h3>
+        <div class="skill-tags">
+          <span>Marketing Digital</span>
+          <span>Marketing Analytics</span>
+          <span>Social Media</span>
+          <span>Conteúdo</span>
+          <span>Design</span>
+          <span>Comunicação Digital</span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>Negócios</h3>
+        <div class="skill-tags">
+          <span>Indicadores</span>
+          <span>Estratégia</span>
+          <span>Visão de negócio</span>
+          <span>Experiência do cliente</span>
+          <span>Tomada de decisão</span>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="skill">
-    <h3>Tecnologia</h3>
-    <span class="skill-level">Intermediário</span>
-
-    <div class="skill-tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>Git/GitHub</span>
-      <span>Desenvolvimento web</span>
-      <span>Automação</span>
-    </div>
-  </div>
-
-  <div class="skill">
-    <h3>Marketing</h3>
-    <span class="skill-level">Intermediário</span>
-
-    <div class="skill-tags">
-      <span>Marketing Digital</span>
-      <span>Marketing Analytics</span>
-      <span>Social Media</span>
-      <span>Conteúdo</span>
-      <span>Design</span>
-      <span>Comunicação Digital</span>
-    </div>
-  </div>
-
-  <div class="skill">
-    <h3>Negócios</h3>
-    <span class="skill-level">Intermediário</span>
-
-    <div class="skill-tags">
-      <span>Indicadores</span>
-      <span>Estratégia</span>
-      <span>Visão de negócio</span>
-      <span>Experiência do cliente</span>
-      <span>Tomada de decisão</span>
-    </div>
-  </div>
-
-</div>
 </section>
 
 <!-- PROJETOS -->
@@ -899,24 +496,16 @@ font-size:clamp(50px,6vw,85px);
       <div>03 / PROJETOS</div>
       <div>PORTFÓLIO · 2026</div>
     </div>
-
     <div class="sql-label">SELECT * FROM projetos ORDER BY relevância DESC;</div>
     <h2 class="section-title">Meus projetos</h2>
-    <p class="section-intro">
-      Projetos em que construo soluções: aplicações web, banco de dados,
-      automações e desenvolvimento.
-    </p>
+    <p class="section-intro">Projetos em que construo soluções: aplicações web, banco de dados, automações e desenvolvimento.</p>
 
     <div class="cards">
-
       <article class="project-card">
         <div class="project-image">DATA CLEANER</div>
         <div class="project-body">
           <h3>Data Cleaner</h3>
-          <p>
-            Aplicativo web para limpeza, padronização e preparação de arquivos
-            Excel e CSV.
-          </p>
+          <p>Aplicativo web para limpeza, padronização e preparação de arquivos Excel e CSV.</p>
           <div class="tags">
             <span class="tag">JavaScript</span><span class="tag">HTML</span>
             <span class="tag">CSS</span><span class="tag">Data Cleaning</span>
@@ -931,9 +520,7 @@ font-size:clamp(50px,6vw,85px);
         <div class="project-image">WEB DEVELOPMENT</div>
         <div class="project-body">
           <h3>Calculadora Web Responsiva</h3>
-          <p>
-            Aplicação web com operações, histórico, modo escuro e layout responsivo.
-          </p>
+          <p>Aplicação web com operações, histórico, modo escuro e layout responsivo.</p>
           <div class="tags">
             <span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
           </div>
@@ -942,80 +529,22 @@ font-size:clamp(50px,6vw,85px);
           </div>
         </div>
       </article>
-<article class="project-card">
-  <div class="project-image">SQL QUERY BUILDER</div>
-  <div class="project-body">
-    <h3>Auxiliar de Consulta SQL</h3>
-    <p>
-      Ferramenta desenvolvida para auxiliar na construção de consultas SQL
-      de forma estruturada, organizando tabelas, campos, filtros e agregações.
-    </p>
-    <div class="tags">
-      <span class="tag">SQL</span>
-      <span class="tag">JavaScript</span>
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-    </div>
-    <div class="buttons">
-      <a
-        class="btn fill"
-        href="https://github.com/michelelimap94/sql-query_helper"
-        target="_blank"
-      >
-        GITHUB
-      </a>
-    </div>
-  </div>
-</article>
-    </div>
-  </div>
-</section>
 
-<!-- DASHBOARDS -->
-<section class="page dark" id="dashboards">
-  <div class="page-inner section">
-    <div class="topbar">
-      <div class="brand">Michele Lima.</div>
-      <div>04 / DASHBOARDS</div>
-      <div>PORTFÓLIO · 2026</div>
-    </div>
-
-    <div class="sql-label">SELECT * FROM dashboards WHERE status = "em construção";</div>
-    <h2 class="section-title">Dashboards</h2>
-    <p class="section-intro">
-      Área dedicada a visualizações e análises em Power BI, com foco em indicadores,
-      desempenho e apoio à tomada de decisão.
-    </p>
-
-    <div class="dashboard-grid">
-      <article class="dashboard">
-        <div class="dashboard-preview">
-          <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
-          <div class="fake-chart"></div>
+      <article class="project-card">
+        <div class="project-image">SQL QUERY BUILDER</div>
+        <div class="project-body">
+          <h3>Auxiliar de Consulta SQL</h3>
+          <p>Ferramenta desenvolvida para auxiliar na construção de consultas SQL de forma estruturada, organizando tabelas, campos, filtros e agregações.</p>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <div class="buttons">
+            <a class="btn fill" href="https://github.com/michelelimap94/sql-query_helper" target="_blank">GITHUB</a>
+          </div>
         </div>
-        <span class="construction">EM CONSTRUÇÃO</span>
-        <h3>Dashboards autorais</h3>
-        <p>Estou desenvolvendo dashboards com dados públicos e projetos autorais para demonstrar análises, indicadores e visualizações em Power BI.</p>
-      </article>
-
-      <article class="dashboard">
-        <div class="dashboard-preview">
-          <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
-          <div class="fake-chart"></div>
-        </div>
-        <span class="construction">EM CONSTRUÇÃO</span>
-        <h3>Marketing Analytics</h3>
-        <p>Projeto em desenvolvimento com foco em aquisição, conversão, CAC, receita e retenção.</p>
-      </article>
-
-      <article class="dashboard">
-        <div class="dashboard-preview">
-          <div class="fake-kpis"><div class="fake-kpi"></div><div class="fake-kpi"></div><div class="fake-kpi"></div></div>
-          <div class="fake-chart"></div>
-        </div>
-        <span class="construction">EM CONSTRUÇÃO</span>
-        <h3>Novos dashboards</h3>
-        <p>Novos projetos serão adicionados conforme forem finalizados e publicados.</p>
       </article>
     </div>
   </div>
@@ -1026,26 +555,16 @@ font-size:clamp(50px,6vw,85px);
   <div class="page-inner section">
     <div class="topbar">
       <div class="brand">Michele Lima.</div>
-      <div>05 / CASES</div>
+      <div>04 / CASES</div>
       <div>PORTFÓLIO · 2026</div>
     </div>
-
     <div class="sql-label">SELECT * FROM cases ORDER BY impacto DESC;</div>
-    <h2 class="section-title">Cases & Analytics</h2>
-    <p class="section-intro">
-      Projetos que conectam análise de dados, problemas de negócio,
-      hipóteses e tomada de decisão.
-    </p>
+    <h2 class="section-title">Cases &amp; Analytics</h2>
+    <p class="section-intro">Projetos que conectam análise de dados, problemas de negócio, hipóteses e tomada de decisão.</p>
 
     <div class="case">
       <h3>Como aumentar a captação de clientes da concorrência?</h3>
-
-      <p>
-        Case autoral de Marketing Analytics desenvolvido para analisar uma
-        oportunidade de aquisição e conversão de clientes da concorrência,
-        estruturando uma hipótese e uma abordagem orientada por dados.
-      </p>
-
+      <p>Case autoral de Marketing Analytics desenvolvido para analisar uma oportunidade de aquisição e conversão de clientes da concorrência, estruturando uma hipótese e uma abordagem orientada por dados.</p>
       <div class="case-flow">
         <span class="flow">ENTENDER</span>
         <span class="flow">IDENTIFICAR</span>
@@ -1053,27 +572,10 @@ font-size:clamp(50px,6vw,85px);
         <span class="flow">MEDIR</span>
         <span class="flow">DECIDIR</span>
       </div>
-
-      <p>
-        <strong>Indicadores:</strong>
-        clientes conquistados, taxa de conversão, CAC, receita gerada,
-        margem estimada e permanência.
-      </p>
-
-      <p>
-        <strong>Dados:</strong> simulação desenvolvida para fins de portfólio,
-        utilizada para demonstrar o raciocínio analítico e a estruturação
-        de uma análise de negócio.
-      </p>
-
+      <p><strong>Indicadores:</strong> clientes conquistados, taxa de conversão, CAC, receita gerada, margem estimada e permanência.</p>
+      <p><strong>Dados:</strong> simulação desenvolvida para fins de portfólio, utilizada para demonstrar o raciocínio analítico e a estruturação de uma análise de negócio.</p>
       <div class="buttons">
-        <a
-          class="btn fill"
-          href="https://github.com/michelelimap94/case-marketing-analytics"
-          target="_blank"
-        >
-          VER CASE NO GITHUB
-        </a>
+        <a class="btn fill" href="https://github.com/michelelimap94/case-marketing-analytics" target="_blank">VER CASE NO GITHUB</a>
       </div>
     </div>
   </div>
@@ -1084,14 +586,12 @@ font-size:clamp(50px,6vw,85px);
   <div class="page-inner">
     <div class="sql-label">SELECT * FROM contato WHERE interesse = "conexões";</div>
     <h2>Entre em contato.</h2>
-    <p>
-      Aberta a conexões, projetos e oportunidades para transformar dados em soluções que geram valor para o negócio.
-    </p>
- <div class="buttons">
-  <a class="btn fill" href="https://www.linkedin.com/in/michele-lima-507734250/" target="_blank">LINKEDIN</a>
-  <a class="btn" href="https://github.com/michelelimap94" target="_blank">GITHUB</a>
-  <a class="btn" href="mailto:michelelimacm64@gmail.com">E-MAIL</a>
-</div>
+    <p>Aberta a conexões, projetos e oportunidades para transformar dados em soluções que geram valor para o negócio.</p>
+    <div class="buttons">
+      <a class="btn fill" href="https://www.linkedin.com/in/michelelimapaes/" target="_blank">LINKEDIN</a>
+      <a class="btn" href="https://github.com/michelelimap94" target="_blank">GITHUB</a>
+      <a class="btn" href="mailto:michelelimacm64@gmail.com">E-MAIL</a>
+    </div>
   </div>
 </section>
 
